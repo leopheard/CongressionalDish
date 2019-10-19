@@ -1,6 +1,6 @@
 <a href="https://congressionaldish.com/">Congressional Dish</a> podcast.<br>
 
-<a href="kodi.tv">KODI<a> / XBMC / Firestick addon for the <a href="https://congressionaldish.com/">Congressional Dish</a> podcast.<br>
+<a href="kodi.tv">KODI<a> / XBMC / Firestick audio addon for the <a href="https://congressionaldish.com/">Congressional Dish</a> podcast.<br>
 
 <a href="https://congressionaldish.com/">Congressional Dish</a> podcast is a twice-monthly podcast that aims to draw attention to where the American people truly have power: Congress. From the perspective of a fed up taxpayer with no allegiance to any political party, Jennifer Briney will fill you in on the must-know information about what our representatives do AFTER the elections and how their actions can and will affect our day to day lives.<br>
 

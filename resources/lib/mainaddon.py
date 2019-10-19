@@ -2,13 +2,11 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
-url1 = "https://congressionaldish.libsyn.com/rss"
 def get_soup1(url1):
     page = requests.get(url1)
     soup1 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup1))
     return soup1
-get_soup1("https://congressionaldish.libsyn.com/rss")
 
 def get_playable_podcast1(soup1):
     subjects = []
@@ -19,12 +17,14 @@ def get_playable_podcast1(soup1):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "https://ssl-static.libsyn.com/p/assets/b/b/7/e/bb7e248264811d4e/Congressional_Dish_logo_-_UppSite.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item)
     return subjects
@@ -48,12 +48,14 @@ def get_playable_podcast(soup1):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "https://ssl-static.libsyn.com/p/assets/b/b/7/e/bb7e248264811d4e/Congressional_Dish_logo_-_UppSite.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item)
     return subjects
