@@ -15,11 +15,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#30000"
-msgid "All episodes"
+msgid "All CD episodes"
 msgstr ""
 
 msgctxt "#30001"
-msgid "Latest episodes"
+msgid "Latest CD episodes"
 msgstr ""
 
 msgctxt "#30002"
